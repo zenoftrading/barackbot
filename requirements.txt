@@ -1,0 +1,2 @@
+binance==0.3
+websocket_client==0.57.0
