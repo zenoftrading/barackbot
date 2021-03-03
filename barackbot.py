@@ -3,11 +3,11 @@ from binance.client import Client
 from binance.enums import KLINE_INTERVAL_1MINUTE
 from datetime import datetime
 
-TEST_BINANCE_API = ''
-TEST_BINANCE_SECRET = ''
-
 BINANCE_API = ''
 BINANCE_SECRET = ''
+
+TEST_BINANCE_API = ''
+TEST_BINANCE_SECRET = ''
 
 # for testnet trading
 test_client = Client(TEST_BINANCE_API, TEST_BINANCE_SECRET)
@@ -60,7 +60,7 @@ def on_the_opening_candle():
     try:
         last_two_candles = client.get_klines(symbol='BNBUSDT', interval=Client.KLINE_INTERVAL_1MINUTE, limit=2)
         range_prev_day = float(last_two_candles[-2][2])-float(last_two_candles[-2][3])
-        entry_price = float(last_two_candles[-1][1])+range_prev_day*0.5
+        entry_price = float(last_two_candles[-1][1])+range_prev_day
         new_free_usdt = float(test_client.get_asset_balance(asset='USDT')['free'])
         free_bnb = float(test_client.get_asset_balance(asset='BNB')['free'])
         free_usdt = new_free_usdt
