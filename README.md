@@ -29,27 +29,27 @@
 
 В консоли должны увидеть что-то такое:
 
-        Opened connection
-        Free USDT is 9976.63802, free BNB is 1000.1
-        Entry price is 249.36929999999998 USDT, quantity is 0.1 BNB
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.15930000 Low: 249.09580000 Close: 249.15880000 Volume: 48.44700000
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.32950000 Low: 249.09580000 Close: 249.32760000 Volume: 415.72900000
-        Buying 0.1 BNB at 249.3693 USDT
-        Buy order info: {'symbol': 'BNBUSDT', 'orderId': 111111, 'orderListId': -1, 'clientOrderId': '4K1iEdjslkdfjIjhpNb2', 'transactTime': 1614758407134, 'price': '249.36930000', 'origQty': '0.10000000', 'executedQty': '0.00000000', 'cummulativeQuoteQty': '0.00000000', 'status': 'NEW', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'fills': []}
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.49750000 Low: 249.06770000 Close: 249.49740000 Volume: 733.67700000
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.50000000 Low: 249.06770000 Close: 249.22690000 Volume: 817.82700000
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.50000000 Low: 249.06770000 Close: 249.31670000 Volume: 882.20500000
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.66020000 Low: 249.06770000 Close: 249.40270000 Volume: 3068.25600000
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.66020000 Low: 249.06770000 Close: 249.48930000 Volume: 3087.31000000
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.66020000 Low: 249.06770000 Close: 249.35270000 Volume: 3347.31700000
-        Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.66020000 Low: 249.06770000 Close: 249.35280000 Volume: 3348.73900000
-        Stop order. Open price is 249.36350000 USDT
-        Loss is -0.002169999999750871 USDT
-        Stop order info: {'symbol': 'BNBUSDT', 'orderId': 111112, 'orderListId': -1, 'clientOrderId': 'Qw3zLdoIBqdf98df', 'transactTime': 1614758462874, 'price': '0.00000000', 'origQty': '0.10000000', 'executedQty': '0.10000000', 'cummulativeQuoteQty': '24.93476000', 'status': 'FILLED', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'SELL', 'fills': [{'price': '249.34760000', 'qty': '0.10000000', 'commission': '0.00000000', 'commissionAsset': 'USDT', 'tradeId': 35189}]}
-        Free USDT is 9976.63585, free BNB is 1000.1
-        Entry price is 249.65974999999997 USDT, quantity is 0.1 BNB
-        Time: 2021-03-03 08:01:00 Open: 249.36350000 High: 249.42970000 Low: 249.30350000 Close: 249.39350000 Volume: 66.42300000
-        Time: 2021-03-03 08:01:00 Open: 249.36350000 High: 249.44160000 Low: 249.30350000 Close: 249.42620000 Volume: 88.59900000
-        Time: 2021-03-03 08:01:00 Open: 249.36350000 High: 249.44160000 Low: 249.30350000 Close: 249.42300000 Volume: 100.39700000
+    Opened connection
+    Free USDT is 9976.63802, free BNB is 1000.1
+    Entry price is 249.36929999999998 USDT, quantity is 0.1 BNB
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.15930000 Low: 249.09580000 Close: 249.15880000 Volume: 48.44700000
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.32950000 Low: 249.09580000 Close: 249.32760000 Volume: 415.72900000
+    Buying 0.1 BNB at 249.3693 USDT
+    Buy order info: {'symbol': 'BNBUSDT', 'orderId': 111111, 'orderListId': -1, 'clientOrderId': '4K1iEdjslkdfjIjhpNb2', 'transactTime': 1614758407134, 'price': '249.36930000', 'origQty': '0.10000000', 'executedQty': '0.00000000', 'cummulativeQuoteQty': '0.00000000', 'status': 'NEW', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'fills': []}
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.49750000 Low: 249.06770000 Close: 249.49740000 Volume: 733.67700000
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.50000000 Low: 249.06770000 Close: 249.22690000 Volume: 817.82700000
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.50000000 Low: 249.06770000 Close: 249.31670000 Volume: 882.20500000
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.66020000 Low: 249.06770000 Close: 249.40270000 Volume: 3068.25600000
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.66020000 Low: 249.06770000 Close: 249.48930000 Volume: 3087.31000000
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.66020000 Low: 249.06770000 Close: 249.35270000 Volume: 3347.31700000
+    Time: 2021-03-03 08:00:00 Open: 249.10500000 High: 249.66020000 Low: 249.06770000 Close: 249.35280000 Volume: 3348.73900000
+    Stop order. Open price is 249.36350000 USDT
+    Loss is -0.002169999999750871 USDT
+    Stop order info: {'symbol': 'BNBUSDT', 'orderId': 111112, 'orderListId': -1, 'clientOrderId': 'Qw3zLdoIBqdf98df', 'transactTime': 1614758462874, 'price': '0.00000000', 'origQty': '0.10000000', 'executedQty': '0.10000000', 'cummulativeQuoteQty': '24.93476000', 'status': 'FILLED', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'SELL', 'fills': [{'price': '249.34760000', 'qty': '0.10000000', 'commission': '0.00000000', 'commissionAsset': 'USDT', 'tradeId': 35189}]}
+    Free USDT is 9976.63585, free BNB is 1000.1
+    Entry price is 249.65974999999997 USDT, quantity is 0.1 BNB
+    Time: 2021-03-03 08:01:00 Open: 249.36350000 High: 249.42970000 Low: 249.30350000 Close: 249.39350000 Volume: 66.42300000
+    Time: 2021-03-03 08:01:00 Open: 249.36350000 High: 249.44160000 Low: 249.30350000 Close: 249.42620000 Volume: 88.59900000
+    Time: 2021-03-03 08:01:00 Open: 249.36350000 High: 249.44160000 Low: 249.30350000 Close: 249.42300000 Volume: 100.39700000
 
 Ещё раз. Бот максимально простой. Не учитывает ни статусы заявок, ни комиссии, нет стопов. Нет обработки минимального лота. Обработка ошибок минимальная. Нет контроля непрерывной работы. Просто механика выставления заявок.
