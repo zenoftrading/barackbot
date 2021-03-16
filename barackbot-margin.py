@@ -32,7 +32,7 @@ def on_message(ws, msg):
                     # in_position = src.stop(settings.TEST_CLIENT,quantity,candle['o'],free_usdt)
                     in_position = src.margin_stop(settings.CLIENT,quantity,candle['o'],free_usdt)
                     # in_position = False
-            entry_price = src.on_the_opening_candle(settings.CLIENT,settings.TEST_CLIENT,quantity,free_usdt)
+            entry_price, free_usdt = src.on_the_opening_candle(settings.CLIENT,settings.TEST_CLIENT,quantity,free_usdt)
             is_candle_opened = False
 
         # check entry price

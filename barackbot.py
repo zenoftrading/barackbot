@@ -32,7 +32,6 @@ def on_message(ws, msg):
                     in_position = src.stop(settings.TEST_CLIENT,quantity,candle['o'],free_usdt)
                     time.sleep(3)
             entry_price, free_usdt = src.on_the_opening_candle(settings.CLIENT,settings.TEST_CLIENT,quantity,free_usdt)
-            # print("Free {} is {}".format(settings.QUOTE,free_usdt))
             is_candle_opened = False
 
         # check entry price
