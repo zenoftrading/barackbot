@@ -1,4 +1,5 @@
 import websocket, json
+import time
 import source as src
 import settings
 
@@ -25,12 +26,13 @@ def on_message(ws, msg):
             if in_position:
                 # stop or take
                 if float(candle['o']) > entry_price:
-                    free_usdt = src.take(settings.TEST_CLIENT,quantity,candle['o'],free_usdt)
-                    in_position = False
+                    in_position = src.take(settings.TEST_CLIENT,quantity,candle['o'],free_usdt)
+                    time.sleep(3)
                 elif float(candle['o']) <= entry_price:
-                    free_usdt = src.stop(settings.TEST_CLIENT,quantity,candle['o'],free_usdt)
-                    in_position = False
-            entry_price = src.on_the_opening_candle(settings.CLIENT,settings.TEST_CLIENT,quantity,free_usdt)
+                    in_position = src.stop(settings.TEST_CLIENT,quantity,candle['o'],free_usdt)
+                    time.sleep(3)
+            entry_price, free_usdt = src.on_the_opening_candle(settings.CLIENT,settings.TEST_CLIENT,quantity,free_usdt)
+            # print("Free {} is {}".format(settings.QUOTE,free_usdt))
             is_candle_opened = False
 
         # check entry price

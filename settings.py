@@ -1,5 +1,7 @@
 from binance.client import Client
 from binance.enums import *
+import source as src
+import keys
 
 BINANCE_API = ''
 BINANCE_SECRET = ''
@@ -21,3 +23,18 @@ BASE = "BNB"
 QUOTE = "USDT"
 SYMBOL = BASE+QUOTE
 LEVER = 2
+
+def get_symbol_limits(client,symbol):
+    try:
+        info = client.get_symbol_info(symbol)
+        price_filter = str(float(info['filters'][0]['minPrice']))[::-1].find('.')
+        lot_size = str(float(info['filters'][2]['minQty']))[::-1].find('.')
+        min_notional = float(info['filters'][3]['minNotional'])
+        print("{} price filter {}, lot size {}, min notional {}".format(symbol,price_filter,lot_size,min_notional))
+        return price_filter, lot_size, min_notional
+    except Exception as e:
+        print("get_symbol_limits error: {}".format(e))
+        return 0, 0, 0
+
+
+PRICE_FILTER, LOT_SIZE, MIN_NOTIONAL = get_symbol_limits(CLIENT,SYMBOL)
